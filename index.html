@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Player Solution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video-player">
+            <iframe id="mainVideo" width="900" height="500" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="filters">
+            <button class="filter-btn" data-category="Music">Music</button>
+            <button class="filter-btn" data-category="Javascript">Javascript</button>
+            <button class="filter-btn" data-category="CSS">CSS</button>
+            <button class="filter-btn" data-category="HTML">HTML</button>
+            <button class="filter-btn" data-category="Favorites">Favorites</button>
+            <button id="clearFilter">Clear Filter</button>
+        </div>
+        <div class="video-list">
+            <div class="video-item" data-category="Javascript">
+                <div class="thumbnail"><img src="javascript.png" alt=""></div>
+                <div class="details">
+                    <h3>Bhailang</h3>
+                    <p>Category: Javascript</p>
+                    <button class="watch-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">Watch Video</button>
+                </div>
+                <button class="remove-btn">X</button>
+            </div>
+            <div class="video-item" data-category="HTML">
+                <div class="thumbnail"><img src="html.png" alt=""></div>
+                <div class="details">
+                    <h3>Fullstack Roadmap</h3>
+                    <p>Category: HTML</p>
+                    <button class="watch-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">Watch Video</button>
+                </div>
+                <button class="remove-btn">X</button>
+            </div>
+            <div class="video-item" data-category="Music">
+                <div class="thumbnail"><img src="music.png" alt=""></div>
+                <div class="details">
+                    <h3>Weekend Music</h3>
+                    <p>Category: Music</p>
+                    <button class="watch-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">Watch Video</button>
+                </div>
+                <button class="remove-btn">X</button>
+            </div>
+            <div class="video-item" data-category="Javascript">
+                <div class="thumbnail"><img src="javascript.png" alt=""></div>
+                <div class="details">
+                    <h3>Life at Park+</h3>
+                    <p>Category: Javascript</p>
+                    <button class="watch-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">Watch Video</button>
+                </div>
+                <button class="remove-btn">X</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
